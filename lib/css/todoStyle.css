@@ -17,6 +17,8 @@
     padding: 0.5rem 2.2rem;
     margin-bottom: 1rem;
     outline: none;
+    /* Fix Mobile */
+    -webkit-appearance: none;
 }
 
 .heading-todo {
