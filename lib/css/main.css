@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+body {
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  width: 13rem;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.form-control {
+  width: 15rem !important;
+}
+
+#mobile-form {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+
+  #background {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #desktop-form {
+    display: none !important;
+  }
+
+  #mobile-form {
+    display: block;
+  }
+
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form input {
+    width: 50% !important;
+  }
+}
+
+/* FIX Input Display on Safari */
+form input {
+  display: -webkit-inline-box !important;
+}

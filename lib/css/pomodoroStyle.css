@@ -1,0 +1,84 @@
+#pomodoro-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: #FF7F7F;
+    text-shadow: 1px 1px 1px grey;
+    width: 100%
+}
+
+.hidden {
+    display: none !important;
+}
+
+.progressbar-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: #FF7F7F !important;
+
+}
+
+#pomodoro-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+#pomodoro-clock-timer {
+    font-size: 3rem !important;
+}
+
+#pomodoro-clock-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.3rem;
+}
+
+
+.pomodoro-input {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+}
+
+.pomodoro-input input {
+    text-align: center;
+    border: 1px solid #F2EEE2;
+    border-radius: 1rem;
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.custom-select {
+    width: 6rem;
+    text-align: center;
+    border: 1px solid #F2EEE2;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    background: #F2EEE2;
+}
+
+#pomodoro-start,
+#pomodoro-reset {
+    color: #FF7F7F !important;
+    background-color: #F2EEE2;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+path {
+    stroke-linecap: round;
+}

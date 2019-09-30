@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Study Planner</title>
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/css/main.css">
+    <link rel="stylesheet" href="lib/css/animate.min.css">
+    <link rel="stylesheet" href="lib/css/todoStyle.css">
+    <link rel="stylesheet" href="lib/css/pomodoroStyle.css">
+    <script src="https://kit.fontawesome.com/e2be2afadd.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand text-white" href="#"><img id="logo" src="icons/logo.png" alt=""></a>
+
+        <form id="desktop-form" class="form-inline  my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-2 text-white bg-light" type="text" placeholder="Type a new list"
+                aria-label="New todo">
+            <button class="btn btn-success" type="button"><i class="fas fa-plus-circle"></i></button>
+        </form>
+    </nav>
+    <!-- Navbar -->
+
+    <section id="background" class="container">
+        <div class="container ml-3">
+            <form id="mobile-form" class="form-inline mt-4">
+                <input class="form-control text-white bg-light" type="text" placeholder="Type a new list"
+                    aria-label="New todo">
+                <button class="btn btn-success mb-1" type="button"><i class="fas fa-plus-circle"></i></button>
+            </form>
+        </div>
+
+
+        <div class="sliding-background">
+            <div id="allLists" class="row">
+                <div id="col1" class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="container mt-5 text-center list-display">
+                        <div class="heading-todo">
+                            <img class="remove mb-2" src="icons/remove.png" alt="">
+                            <div class="container-header">
+                                <h4>asfasfasfasfasfasfasfasf</h4>
+                            </div>
+
+                        </div>
+
+                        <input class="input-todo text-center" type="text" placeholder="Enter a new task...">
+                        <ul>
+                            <div>
+                                <li class="todo-background">
+                                    <span>Thing to do 1</span>
+                                    <div class="icon-container hidden">
+                                        <div><img class="timer" src="icons/hourglass.png" alt=""></div>
+                                        <div><img class="checked" src="icons/checked.png" alt=""></div>
+                                        <div><img class="garbage" src="icons/garbage.png" alt=""></div>
+                                    </div>
+
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div id="col2" class="col-lg-4 col-md-6 col-sm-6">
+
+                </div>
+
+                <div id="col3" class="col-lg-4 col-md-6 col-sm-6">
+
+                </div>
+            </div>
+
+            <div id="pomodoroModal" class="modal fade" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h5 id="pomodoro-title" class="modal-title"></h5>
+                            <button id="close-modal" type="button" class="close" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="pomodoro-container">
+                                <div id="pomodoro-clock">
+                                    <div id="pomodoro-work-alert" class="alert alert-danger hidden" role="alert">
+                                        Work Session
+                                    </div>
+                                    <div id="pomodoro-break-alert" class="alert alert-success hidden" role="alert">
+                                        Break Session
+                                    </div>
+                                    <div id="pomodoro-timer"></div>
+
+                                    <div id="pomodoro-buttons-actions" class="text-center m-3">
+                                        <button id="pomodoro-start">
+                                            <i class="fas fa-play" id="play-icon"></i>
+                                            <i class="fas fa-pause hidden" id="pause-icon"></i>
+                                        </button>
+                                        <button id="pomodoro-reset" class="">
+                                            <i class="fas fa-redo"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div id="pomodoro-clock-actions" class="container">
+                                    <div class="pomodoro-input">
+                                        <label>Work Duration</label>
+                                        <input name="input-work-duration" id="input-work-duration" type="number" />
+                                    </div>
+                                    <div class="pomodoro-input">
+                                        <label>Break Duration</label>
+                                        <input name="input-break-duration" id="input-break-duration" type="number" />
+                                    </div>
+                                    <div class="pomodoro-input">
+                                        <Label>Alarm Display</Label>
+                                        <select id="input-select-alarm" class="custom-select">
+                                            <option selected>Choose Alarm...</option>
+                                            <option value="1">Alarm Beep 1</option>
+                                            <option value="2">Alarm Beep 2</option>
+                                            <option value="3">Alarm Beep 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    </div>
+    <!-- Full Page Intro -->
+    <!-- Java Script -->
+    <script type="module" src="lib/js/todo.js"></script>
+    <script type="module" src="lib/js/pomodoro.js"></script>
+    <script src="lib/js/progressbar.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
