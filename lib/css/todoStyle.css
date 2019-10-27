@@ -1,141 +1,140 @@
 .list-display {
-    background: white;
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 20rem;
-    display: block;
-    overflow: auto;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20rem;
+  display: block;
+  overflow: auto;
 }
 
 .input-todo {
-    border-radius: 1rem;
-    border: 1px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 0.5rem 2.2rem;
-    margin-bottom: 1rem;
-    outline: none;
-    /* Fix Mobile */
-    -webkit-appearance: none;
+  border-radius: 1rem;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 0.5rem 2.2rem;
+  margin-bottom: 1rem;
+  outline: none;
 }
 
 .heading-todo {
-    padding: 1.8rem 1rem;
-    display: flex;
+  padding: 1.8rem 1rem;
+  display: flex;
 }
 
 .todo-background {
-    position: relative;
-    padding: 0.375rem 1rem;
-    margin: 1.2rem .5rem;
-    text-align: left;
-    font-size: 1.1rem;
-    border-radius: 1rem;
-    border: 1px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    /* Contains all the text */
-    word-wrap: break-word !important;
-    /* Transition */
-    background: linear-gradient(to right, white 50%, #00b09b 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: all .5s ease;
+  position: relative;
+  padding: 0.375rem 1rem;
+  margin: 1.2rem 0.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  /* Contains all the text */
+  word-wrap: break-word !important;
+  /* Transition */
+  background: linear-gradient(to right, white 50%, #00b09b 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.5s ease;
 }
 
-
 .todo-background-hover {
-    background-position: right bottom;
-    color: #00b09b
+  background-position: right bottom;
+  color: #00b09b;
 }
 
 .todo-reset {
-    padding: 0.375rem 1rem;
-    margin: 1.2rem .5rem;
-    text-align: left;
-    font-size: 1.1rem;
-    border-radius: 1rem;
-    word-wrap: break-word !important;
-    border: 1px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    color: black !important;
+  padding: 0.375rem 1rem;
+  margin: 1.2rem 0.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+  word-wrap: break-word !important;
+  border: 1px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  color: black !important;
 }
 
 .container-header {
-    display: block;
-    word-wrap: break-word !important;
-    overflow: auto;
-    text-align: left;
-    margin-left: 1rem;
-    margin-top: .5rem;
-    width: 200px;
+  display: block;
+  word-wrap: break-word !important;
+  overflow: auto;
+  text-align: left;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 200px;
 }
 
 /* 
 TODO   This class is from garbage icon, Fix this in js!
 */
 .visible {
-    display: inline !important;
-    opacity: 1 !important;
+  display: inline !important;
+  opacity: 1 !important;
 }
 
 .hidden {
-    display: none;
-    opacity: 0;
+  display: none;
+  opacity: 0;
 }
 
 .done-todo {
-    text-decoration: line-through;
-    opacity: 0.3;
+  text-decoration: line-through;
+  opacity: 0.3;
 }
 
 .removed-todo {
-    display: block;
+  display: block;
 }
 
 .removed-todo .garbage {
-    float: right;
+  float: right;
 }
 
 /* -------- Icon Styling ---------- */
 .icon-container {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 68;
-
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 68;
 }
 
 .icon-container div {
-    margin-left: .7rem;
-    margin-right: .7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
 }
 
 .checked {
-    cursor: pointer;
-    width: 1.5rem;
-    color: #00b09b;
-    border-radius: .9rem;
-    background-color: white;
+  cursor: pointer;
+  width: 1.5rem;
+  color: #00b09b;
+  border-radius: 0.9rem;
+  background-color: white;
 }
 
 .timer {
-    cursor: pointer;
-    width: 1.5rem;
-
+  cursor: pointer;
+  width: 1.5rem;
 }
 
 .garbage {
-    cursor: pointer;
-    width: 1.6rem;
+  cursor: pointer;
+  width: 1.6rem;
 }
 
 .remove {
-    cursor: pointer;
-    width: 1.7rem;
-    margin: 10px;
-    align-self: center;
+  cursor: pointer;
+  width: 1.7rem;
+  margin: 10px;
+  align-self: center;
+}
+/* Fix Mobile Inputs */
+input {
+  -webkit-appearance: none;
 }
