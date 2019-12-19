@@ -44,14 +44,14 @@
 
         <div class="sliding-background">
             <div id="allLists" class="row">
-                <div id="col1" class="col-lg-4 col-md-6 col-sm-6">
+                <div id="col1"class="col-lg-4 col-md-6 col-sm-6" ondrop="dropList(event)" ondragover="allowDrop(event)">
 
                 </div>
-                <div id="col2" class="col-lg-4 col-md-6 col-sm-6">
+                <div id="col2" class="col-lg-4 col-md-6 col-sm-6" ondrop="dropList(event)" ondragover="allowDrop(event)">
 
                 </div>
 
-                <div id="col3" class="col-lg-4 col-md-6 col-sm-6">
+                <div id="col3" class="col-lg-4 col-md-6 col-sm-6" ondrop="dropList(event)" ondragover="allowDrop(event)">
 
                 </div>
             </div>
@@ -141,11 +141,11 @@
         </div>
     </section>
     </div>
-    <!-- Full Page Intro -->
     <!-- Java Script -->
     <script type="module" src="lib/js/todo.js"></script>
     <script type="module" src="lib/js/pomodoro.js"></script>
     <script type="module" src="lib/js/list.js"></script>
+    <script src="lib/js/drag.js"></script>
     <script src="lib/js/progressbar.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

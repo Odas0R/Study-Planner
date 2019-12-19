@@ -69,9 +69,6 @@
   width: 200px;
 }
 
-/* 
-TODO   This class is from garbage icon, Fix this in js!
-*/
 .visible {
   display: inline !important;
   opacity: 1 !important;
