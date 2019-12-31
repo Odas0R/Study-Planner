@@ -90,16 +90,20 @@
 }
 
 .done-todo {
+  display: block;
+  width: 80%;
+  word-wrap: break-word;
   text-decoration: line-through;
   opacity: 0.3;
 }
 
 .removed-todo {
-  display: block;
+  display: flex;
 }
 
 .removed-todo .garbage {
-  float: right;
+  align-self: flex-end;
+  margin: auto;
 }
 
 /* -------- Icon Styling ---------- */
