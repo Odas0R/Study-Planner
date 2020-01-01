@@ -6,6 +6,7 @@
   width: 20rem;
   display: block;
   overflow: auto;
+  z-index: 100;
 }
 
 .input-todo {
@@ -73,10 +74,11 @@
   display: block;
   word-wrap: break-word !important;
   overflow: auto;
+  margin: 0 auto;
   text-align: left;
   margin-left: 1rem;
   margin-top: 0.5rem;
-  width: 200px;
+  width: 138px;
 }
 
 .visible {

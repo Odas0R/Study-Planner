@@ -25,7 +25,7 @@
 
         <form id="desktop-form" class="form-inline  my-2 my-lg-0 ml-auto">
             <input id="addlist-input" class="form-control mr-2 text-white bg-light" type="text"
-                placeholder="Type a new list" aria-label="New todo">
+                placeholder="Type a new list..." aria-label="New todo">
             <button id="addlist-button" class="btn btn-success" type="button"><i
                     class="fas fa-plus-circle"></i></button>
         </form>
@@ -35,9 +35,9 @@
     <section id="background" class="container">
         <div class="container ml-3">
             <form id="mobile-form" class="form-inline mt-4">
-                <input class="form-control text-white bg-light" type="text" placeholder="Type a new list"
+                <input id="mobile-input" class="form-control text-white bg-light" type="text" placeholder="Type a new list"
                     aria-label="New todo">
-                <button class="btn btn-success mb-1" type="button"><i class="fas fa-plus-circle"></i></button>
+                <button id="mobile-input-button" class="btn btn-success mb-1" type="button"><i class="fas fa-plus-circle"></i></button>
             </form>
         </div>
 
@@ -119,6 +119,8 @@
         <div id="footer" class="container">
             <h1>Info</h2>
                 <p class="lead">
+                    <strong>Important: Data is storaged in cache, if you delete browser cache + localStorage all data will be removed!!</strong>
+                    <br> 
                     This Todo-List has <strong>localStorage</strong> integrated so it can be
                     used for later. Also, it contains a <strong>pomodoro timer</strong>, each
                     todo that you create has an <strong>button</strong> to complete it, with a
