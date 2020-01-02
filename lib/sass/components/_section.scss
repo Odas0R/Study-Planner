@@ -1,0 +1,102 @@
+// ======== Navbar =========
+.navbar-brand {
+    .logo {
+        width: 5.4rem;
+    }
+    // Center the brand in the navbar
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+
+.navbar {
+    a {
+        color: black;
+        &:hover {
+            color: grey;
+        }
+    }
+    margin-bottom: 6rem;
+}
+
+// ======== Web Page =========
+
+body {
+    background: #00b09b;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#96c93d),
+        to(#00b09b)
+    );
+    background: -o-linear-gradient(left, #96c93d, #00b09b);
+    background: linear-gradient(to right, #96c93d, #00b09b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+.form-control {
+    width: 15rem !important;
+}
+
+#mobile-form {
+    display: none;
+}
+#footer {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: 10rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 2rem;
+        color: black;
+        strong {
+            font-weight: 700;
+        }
+    }
+    div {
+        font-size: 3rem;
+        text-align: center;
+        a {
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #background {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #desktop-form {
+        display: none !important;
+    }
+
+    #mobile-form {
+        display: block;
+    }
+
+    form input {
+        width: 50% !important;
+        /* FIX Input Display on Safari */
+        display: -webkit-inline-box !important;
+    }
+}
