@@ -3,3 +3,21 @@
 @import './components/section';
 @import './components/lists';
 @import './components/pomodoro';
+
+// General Classes
+
+.visible {
+    display: inline !important;
+    opacity: 1 !important;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+[contenteditable] {
+    -webkit-user-select: text;
+    user-select: text;
+    outline: none;
+}

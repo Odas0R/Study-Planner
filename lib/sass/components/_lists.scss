@@ -18,6 +18,35 @@
     margin: 40px 15px;
     width: 320px;
     height: fit-content;
+
+    .todos {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading-todo {
+        padding: 1.8rem 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.container-header {
+    word-wrap: break-word !important;
+    text-align: center;
+
+    margin-top: 0.5rem;
+    width: 190px;
+    h4 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
 }
 
 .input-todo {
@@ -42,6 +71,7 @@
     margin: 17px auto;
     text-align: left;
     font-size: 1.1rem;
+    font-weight: 500;
     border-radius: 0.5rem;
     width: 17.5rem;
     border: 1px solid white;
@@ -67,8 +97,32 @@
     transition: all 0.5s ease;
     &:hover {
         background-position: right bottom;
-        color: #00b09b;
+        color: transparent;
+        // Hide Todo
+        span {
+            display: none;
+        }
+        .icon-container {
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
     }
+}
+
+.todo-background-onEdit {
+    padding: 0.375rem 1rem;
+    margin: 17px auto;
+    text-align: left;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    width: 17.5rem;
+    border: 1px solid white;
+    background-color: white;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /* Contains all the text */
+    word-wrap: break-word !important;
 }
 
 .todo-reset {
@@ -84,41 +138,6 @@
         0 6px 20px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     color: black !important;
-}
-
-.todos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.heading-todo {
-  padding: 1.8rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container-header {
-  word-wrap: break-word !important;
-  text-align: center;
-  
-  margin-top: 0.5rem;
-  width: 190px;
-    h4 {
-      font-size: 1.6rem;
-      font-weight: 700;
-    }
-}
-
-.visible {
-    display: inline !important;
-    opacity: 1 !important;
-}
-
-.hidden {
-    display: none;
-    opacity: 0;
 }
 
 .done-todo {
@@ -138,10 +157,9 @@
 }
 
 /* -------- Icon Styling ---------- */
+  
 .icon-container {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -153,13 +171,15 @@
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 68;
+    height: 100%; 
+    
+    div {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
 }
 
-.icon-container div {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
-}
+// Icons styling
 
 .checked {
     cursor: pointer;
