@@ -81,7 +81,7 @@
     /* Contains all the text */
     word-wrap: break-word !important;
     /* Transition */
-    background: -webkit-gradient(
+    background: (
         linear,
         left top,
         right top,
@@ -92,6 +92,7 @@
     background: linear-gradient(to right, white 50%, #00b09b 50%);
     background-size: 200% 100%;
     background-position: left bottom;
+    -moz-transition: all 0.2s ease;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -123,6 +124,24 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     /* Contains all the text */
     word-wrap: break-word !important;
+}
+
+.todo-background-onDrag {
+    padding: 0.375rem 1rem;
+    margin: 17px auto;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    width: 90%;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /* Contains all the text */
+    word-wrap: break-word !important;
+    background-color: white; 
+    background-size: 200% 100%;
 }
 
 .todo-reset {
