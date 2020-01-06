@@ -1,10 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 
-@import './components/section';
+@import './components/view';
 @import './components/lists';
 @import './components/pomodoro';
 
-// General Classes
+// General Stuff 
+
+body {
+    background: url(https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    overflow-y: hidden;
+    zoom: 0.85;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 
 .visible {
     display: inline !important;

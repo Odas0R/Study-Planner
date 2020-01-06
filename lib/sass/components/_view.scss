@@ -17,6 +17,8 @@
 
 // Input Add List
 .form-control {
+    width: 15rem !important;
+    background: hsla(0, 0%, 100%, 0.2);
     border-color: transparent;
     &::placeholder {
         color: white;
@@ -41,29 +43,17 @@
     }
 }
 
-// ======== Web Page =========
+// ======== Navbar =========
 
-body {
-    background: url(https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    overflow-y: hidden;
-}
-
-.form-control {
-    width: 15rem !important;
-    background: hsla(0, 0%, 100%, 0.2);
-}
-
-#mobile-form,
-#mobile-board-button {
+   
+// Hide mobile form in deskop view
+#mobile-form {
     display: none;
 }
+
+
+// ======== Footer =========
+
 #footer {
     h1 {
         font-size: 3rem;
@@ -90,6 +80,7 @@ body {
         }
     }
 }
+// ======== Footer =========
 
 // ===== Mobile Responsive =====
 
@@ -145,7 +136,7 @@ body {
     }
 
     .scroll-container {
-        width: 365px;
+        width: 345px;
     }
 
     .navbar {
