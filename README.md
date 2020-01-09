@@ -1,15 +1,18 @@
 # Study-Planner
 
 A simple todo-list with a pomodoro timer incorporated.
+<br>
+This is my first project, took a little time because
+while i was learning i was adding concepts to this project.
 
 ## Features ⭐️
 
 - **LocalStorage**
 - **Web Workers**
 - **Draggable Todos and Lists**
+- **Editable Todos**
 - **Track your productivity with a Chart**
 - **Simple UI/UX**
-- **All In One**
 
 ## Aquired Concepts 📚
 
