@@ -1,13 +1,30 @@
 # Study-Planner
 
-A simple todo-list with a pomodoro timer incorporated
+A simple todo-list with a pomodoro timer incorporated.
 
-Also has localStorage integrated. Need to add WebWorkers in order to run the timer in the background.
+## Features ⭐️
 
-This project is one of my firsts projects, the javascript syntax is kinda uhh.
-This is just to show an idea and how i've represented it in code, it was a super fun because i had no idea how to do it...
+- **LocalStorage**
+- **Web Workers**
+- **Draggable Todos and Lists**
+- **Track your productivity with a Chart**
+- **Simple UI/UX**
+- **All In One**
 
-I encourage you to make a project on your own, it's hella fun.
+## Aquired Concepts 📚
+
+- **Why do we need Design Patterns** - My code went wild at some point, a complete mess.
+- **Usabillity of Web Workers, why setTimeOut sucks 😂**
+- **Better CSS/Sass Skills**
+- **Working with Sass, which is way better than plain CSS. It's super flexible (It's a pre-processor)**
+- **How to design/architect an javascript app using MVC**
+- **A little bit on WebWorkers & Performance**
+- **Better Javascript Skills**
+- **Understanding LocalStorage & Cookies**
+
+### **Note** - Nowadays nobody builds apps like this. This was just for learning purposes.
+
+#### Using React with Firebase would be a good choice of technologies for producing an app like this.
 
 ## Environment
 
