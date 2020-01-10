@@ -3,7 +3,7 @@
 A simple todo-list with a pomodoro timer incorporated.
 <br>
 This is my first project, took a little time because
-while i was learning i was adding concepts to this project.
+while i was learning i was adding concepts to the app.
 
 ## Features ⭐️
 
@@ -11,7 +11,6 @@ while i was learning i was adding concepts to this project.
 - **Web Workers**
 - **Draggable Todos and Lists**
 - **Editable Todos**
-- **Track your productivity with a Chart**
 - **Simple UI/UX**
 
 ## Aquired Concepts 📚
@@ -20,7 +19,6 @@ while i was learning i was adding concepts to this project.
 - **Usabillity of Web Workers, why setTimeOut sucks 😂**
 - **Better CSS/Sass Skills**
 - **Working with Sass, which is way better than plain CSS. It's super flexible (It's a pre-processor)**
-- **How to design/architect an javascript app using MVC**
 - **A little bit on WebWorkers & Performance**
 - **Better Javascript Skills**
 - **Understanding LocalStorage & Cookies**

@@ -62,6 +62,18 @@
         font-weight: 700;
     }
 
+    .important {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    ul {
+        font-size: 1.3rem;
+        font-weight: 600;
+        width: 30%;
+        margin: 0 auto;
+    }
+
     p {
         font-size: 1.1rem;
         font-weight: 500;
@@ -142,5 +154,11 @@
     .navbar {
         padding: 25px;
         margin-bottom: 2.4rem;
+    }
+    
+    #footer {
+        ul {
+            width: 50%;
+        }
     }
 }
