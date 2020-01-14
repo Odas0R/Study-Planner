@@ -5,7 +5,7 @@ A simple todo-list with a pomodoro timer incorporated.
 This is my first project, took a little time because
 while i was learning i was adding concepts to the app.
 <br>
-I want to mention that i was inspired by [Trello](www.trello.com) in coding this app.
+I want to mention that i was inspired by [Trello]("https://www.trello.com") in coding this app.
 
 ## Features ⭐️
 
